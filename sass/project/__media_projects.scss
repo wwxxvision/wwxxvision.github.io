@@ -1,0 +1,43 @@
+@media (max-width: 777px) {
+  .project__page {
+    .wrapper  {
+      .page__content  {
+        .project__intro {
+          max-width: 100%;
+        }
+        .project__logo  {
+          img {
+            height: auto;
+          }
+        }
+        .project__intro_bottom {
+          max-width: 100%;
+        }
+        .project__gallery {
+          .gallery__item {
+            width: 100%;
+          }
+        }
+      }
+    }
+  } 
+}
+@media (max-width: 500px) {
+  .project__navigator {
+    height: auto;
+    padding-bottom: 92px;
+    padding-top: 92px;
+  }
+  .other__project_title  {
+    font-size: 15px!important;
+  }
+  .navigator__btn  {
+    font-size: 28px!important;
+  }
+  .project__page {
+    .wrapper {
+      margin-top: 45px;
+      margin-bottom: 45px;
+    }
+  }
+}

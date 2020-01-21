@@ -1,0 +1,141 @@
+
+
+//   @import '../variables.scss';
+  
+// @media (max-width: 1412px) and (min-width: 1025px)  {
+//   .header {
+//     &.header_page {
+//       .page__label {       
+//         .label__wrapper {
+//           // padding-right: 303px;
+//           .info__block {
+//             .block__title {
+//               font-size: 80px;
+//             }
+//             .block__subtitle {
+//               position: static;
+//               font-size: 25px;
+//               padding-left: 10px;
+//             }
+//           }
+//         }
+//       }
+//       .decor__circle {
+//         display: none;
+//       }
+//       .decors__left {
+//         display: none;
+//       }
+//     }
+//   }
+// }
+@media (max-width: 1380px) {
+  .header {
+    &.header_page {
+     
+      .decors__left {
+        display: none;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1120px) {
+  .layer {
+    display: none;
+  }
+  .curve {
+    display: none;
+  }
+  .header {
+    &.header_page {
+     
+      .page__label {       
+        .label__wrapper {
+          // padding-right: 303px;
+          .info__block {
+            .block__title {
+              font-size: 130px;
+            }
+          }
+        }
+      }
+    }
+    }
+}
+
+@media (max-width: 777px) {
+  .header {
+    &.header_page  {
+      .page__label {
+        .decor__circle {
+          display: none;
+        }
+      }
+    }
+  } 
+}
+@media (max-width: 691px) {
+  .header {
+    &.header_page {
+      .page__label {
+        .label__wrapper {
+          .info__block {
+            .block__title {
+              line-height: 65px;
+              font-size: 66px;
+            }
+            .block__wall {
+              display: none;
+            }
+            .block__subtitle {
+              display: none;
+            }
+          }
+          .title {
+            font-size: 17px;
+            margin-top: 23px;
+          }
+        } 
+      }
+    }
+  }  
+}
+@media (max-width: 500px) {
+  .decors__left {
+    display: block!important;
+    position: absolute;
+    left: 50%;
+    .left__img {
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 381px) {
+  .decors__left {
+    left: 69%;
+  }
+}
+@media (max-width: 335px) {
+  .decors__left {
+    left: 50%;
+  }
+  .header {
+    &.header_page {
+     
+      .page__label {       
+        .label__wrapper {
+          // padding-right: 303px;
+          .info__block {
+            .block__title {
+              font-size: 50px;
+            }
+          }
+        }
+      }
+    }
+    }
+}

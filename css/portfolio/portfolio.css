@@ -1,0 +1,39 @@
+.screen__portfolio {
+  height: calc(100vh - 100px);
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center; }
+  .screen__portfolio .choose__block {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    padding-left: 273px;
+    width: 100%; }
+    .screen__portfolio .choose__block .block__left.choose_config {
+      width: 50%; }
+    .screen__portfolio .choose__block .block__left .screen__title {
+      color: #7a7a7a;
+      font-family: "Akrobat-SemiBold";
+      font-size: 27px;
+      font-weight: 400;
+      line-height: 40px;
+      margin-top: 40px; }
+    .screen__portfolio .choose__block .block__left .portfolio__list {
+      height: 100%;
+      overflow: hidden; }
+      .screen__portfolio .choose__block .block__left .portfolio__list .list__item {
+        padding-top: 50px;
+        padding-bottom: 50px; }
+        .screen__portfolio .choose__block .block__left .portfolio__list .list__item span {
+          font-family: "Akrobat-SemiBold";
+          font-size: 55px;
+          font-weight: 400;
+          letter-spacing: 1px; }
+    .screen__portfolio .choose__block .block__right {
+      width: 50%;
+      max-height: 100%;
+      height: 100%; }
+      .screen__portfolio .choose__block .block__right img {
+        max-height: 900px; }

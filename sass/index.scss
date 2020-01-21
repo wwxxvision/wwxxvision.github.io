@@ -1,0 +1,16 @@
+//upload fonts
+@import './fonts.scss';
+@import './layer/layer.scss';
+@import './common/common.scss';
+@import './header/header.scss';
+@import './portfolio/portfolio.scss';
+@import './project/project.scss';
+@import './contacts/contacts';
+@import './footer//footer';
+// media
+@import './common/__media_common';
+@import './header/_media_header';
+@import './portfolio/_media_portfolio';
+@import './project/_media_projects';
+@import './contacts/_media_contacts';
+@import './footer/_media_footer';
