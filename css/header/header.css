@@ -35,13 +35,16 @@
           display: inline-block;
           color: #6c6c6c;
           font-family: "Akrobat-SemiBold";
-          font-size: 22px;
+          font-size: 18px;
           font-weight: 400;
           text-decoration: none; }
           .header.header_page .wrapper .nav .nav__panel .panel__tab .tab__link.current {
             color: #ff0032;
-            border-bottom: 3px #ff0032 solid;
+            border-bottom: 2px #ff0032 solid;
             padding-bottom: 11px; }
+      .header.header_page .wrapper .nav .nav__touch img {
+        width: 31px;
+        height: 11px; }
   .header.header_page .page__label {
     display: flex;
     align-items: center;
@@ -63,14 +66,14 @@
         .header.header_page .page__label .label__wrapper .info__block .block__title {
           text-transform: uppercase;
           color: #ff0032;
-          line-height: 167.27px;
+          line-height: 135px;
           font-family: "Akrobat-ExtraBold";
           font-size: 145px;
           font-weight: 400; }
         .header.header_page .page__label .label__wrapper .info__block .block__wall {
           display: inline-block;
           width: 6px;
-          height: 157px;
+          height: 125px;
           box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.11);
           border-radius: 3px;
           background-color: #ffffff;
@@ -78,21 +81,20 @@
         .header.header_page .page__label .label__wrapper .info__block .block__subtitle {
           color: #6c6c6c;
           font-family: "Akrobat-Regular";
-          font-size: 50px;
+          font-size: 40px;
           font-weight: 400;
           line-height: 50px;
           text-transform: uppercase;
-          padding-left: 45px;
-          padding-right: 45px;
+          padding-left: 32px;
+          padding-right: 32px;
           position: absolute;
-          bottom: 50px; }
+          bottom: 40px; }
       .header.header_page .page__label .label__wrapper .title {
         margin-top: 6px;
         margin-bottom: 6px;
         color: #000000;
         font-family: "Akrobat-SemiBold";
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 400;
-        line-height: 47px; }
-    .header.header_page .page__label .decors__left {
-      margin-right: 100%; }
+        line-height: 47px;
+        padding-left: 5px; }
