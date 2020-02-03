@@ -1,6 +1,7 @@
 .screen.screen__contacts {
-  height: calc(100vh - 100px);
-  width: 100%; }
+  min-height: calc(100vh - 100px);
+  width: 100%;
+  margin-bottom: 50px; }
   .screen.screen__contacts .wrapper {
     height: calc(100% - 100px);
     display: flex;
@@ -15,7 +16,7 @@
         .screen.screen__contacts .wrapper .contacts__block .block__left .screen__title {
           color: #7a7a7a;
           font-family: "Akrobat-SemiBold";
-          font-size: 27px;
+          font-size: 20px;
           font-weight: 400;
           line-height: 40px;
           margin-top: 40px; }
