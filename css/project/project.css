@@ -1,6 +1,8 @@
 .project__page {
   width: 100%;
   height: auto; }
+  .project__page[data-active="false"] {
+    display: none; }
   .project__page.grey_theme {
     background-color: #f1f1f1; }
   .project__page .page__banner {

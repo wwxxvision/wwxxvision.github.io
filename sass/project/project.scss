@@ -12,6 +12,9 @@
 .project__page {
   width: 100%;
   height: auto;
+  &[data-active="false"] {
+    display: none;
+  }
   &.grey_theme {
     background-color: #f1f1f1;
   }

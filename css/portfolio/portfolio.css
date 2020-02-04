@@ -1,10 +1,11 @@
 .screen__portfolio {
-  height: calc(100vh - 100px);
+  min-height: calc(100vh - 100px);
   width: 100%;
   margin-top: 100px;
   margin-bottom: 100px;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
   .screen__portfolio .choose__block {
     display: flex;
     justify-content: space-between;
@@ -25,12 +26,40 @@
       overflow: hidden; }
       .screen__portfolio .choose__block .block__left .portfolio__list .list__item {
         padding-top: 50px;
-        padding-bottom: 50px; }
+        padding-bottom: 50px;
+        display: flex;
+        align-items: center; }
+        .screen__portfolio .choose__block .block__left .portfolio__list .list__item:hover {
+          color: #fff; }
+          .screen__portfolio .choose__block .block__left .portfolio__list .list__item:hover .select {
+            display: block;
+            transform: translateX(0);
+            visibility: visible; }
+        .screen__portfolio .choose__block .block__left .portfolio__list .list__item .select {
+          height: 116px;
+          background-color: #ff0032;
+          width: 48%;
+          position: absolute;
+          left: 0;
+          visibility: hidden;
+          z-index: -10;
+          transform: translateX(-100%);
+          transition: 0.5s; }
+          .screen__portfolio .choose__block .block__left .portfolio__list .list__item .select.select__active {
+            display: block;
+            transform: translateX(0);
+            visibility: visible; }
         .screen__portfolio .choose__block .block__left .portfolio__list .list__item span {
           font-family: "Akrobat-SemiBold";
           font-size: 55px;
           font-weight: 400;
-          letter-spacing: 1px; }
+          letter-spacing: 1px;
+          z-index: 20;
+          user-select: none;
+          transition: 0.5s;
+          cursor: pointer; }
+          .screen__portfolio .choose__block .block__left .portfolio__list .list__item span.tab__active {
+            color: #fff; }
     .screen__portfolio .choose__block .block__right {
       width: 50%;
       max-height: 100%;

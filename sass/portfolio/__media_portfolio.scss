@@ -1,7 +1,6 @@
 @media (max-height: 1070px) {
   .screen__portfolio {
     .choose__block {
-      max-height: 500px;
       .block__left {
         .portfolio__list {
           .list__item {
@@ -9,11 +8,6 @@
               font-size: 28px;
             }
           }
-        }
-      }
-      .block__right {
-        img {
-          max-height: 500px;
         }
       }
     }
@@ -41,6 +35,13 @@
       .block__left{
         &.choose_config {
           width: 100%;
+          .portfolio__list {
+            .list__item {
+              .select {
+                width: 100%;
+              }
+            }
+          }
         }
       }
       .block__right {
@@ -62,6 +63,9 @@
           .list__item {
             padding-top: 25px;
             padding-bottom: 25px;
+            .select {
+              height: 55px;
+            }
           }
         }
       }  
