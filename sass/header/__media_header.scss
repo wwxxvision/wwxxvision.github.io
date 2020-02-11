@@ -64,7 +64,15 @@
     }
     }
 }
-
+@media (max-width: 1200px) {
+  .decors__left {
+    &.desktop {
+      .left__img {
+        display: none;
+      }
+    }
+  }
+}
 @media (max-width: 777px) {
   .header {
     &.header_page  {

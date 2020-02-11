@@ -1,5 +1,6 @@
 import AOS from 'aos';
 
+
 console.log(AOS)
 
 window.scrollTo(0, 0);
@@ -14,10 +15,12 @@ function normalizeDecorCurve() {
 }
 
 window.addEventListener('scroll', function (e) {
-
-  this.pageYOffset > 60 ? document.querySelector('.nav').classList.add('active')
-    : document.querySelector('.nav').classList.remove('active')
-
+  if (this.pageYOffset > 2) {
+    document.querySelector('nav').style.transform = `translateX(-300)px`;
+  }
+  this.pageYOffset > 10 ? document.querySelector('.nav').classList.add('active ')
+    : document.querySelector('.nav').classList.remove('active');
+  
 });
 
 

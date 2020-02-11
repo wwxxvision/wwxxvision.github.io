@@ -19,8 +19,7 @@
       font-family: "Akrobat-SemiBold";
       font-size: 20px;
       font-weight: 400;
-      line-height: 40px;
-      margin-top: 40px; }
+      line-height: 40px; }
     .screen__portfolio .choose__block .block__left .portfolio__list {
       height: 100%;
       overflow: hidden; }
@@ -51,7 +50,7 @@
             visibility: visible; }
         .screen__portfolio .choose__block .block__left .portfolio__list .list__item span {
           font-family: "Akrobat-SemiBold";
-          font-size: 55px;
+          font-size: 32px;
           font-weight: 400;
           letter-spacing: 1px;
           z-index: 20;

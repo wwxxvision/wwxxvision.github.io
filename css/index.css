@@ -98,6 +98,14 @@ html, body {
 .relative {
   position: relative; }
 
+@keyframes translateMenu {
+  0% {
+    transform: translateX(-300px); }
+  50% {
+    transform: translateX(-100px); }
+  100% {
+    transform: translateX(0); } }
+
 .header.header_page {
   max-height: 100%;
   width: 100%; }
@@ -126,7 +134,8 @@ html, body {
         align-items: center;
         background-color: #fff;
         border-bottom-left-radius: 13px;
-        border-bottom-right-radius: 13px; }
+        border-bottom-right-radius: 13px;
+        animation: translateMenu 0.5s ease-in; }
       .header.header_page .wrapper .nav .nav__panel {
         display: flex;
         list-style-type: none;
@@ -137,13 +146,11 @@ html, body {
           display: inline-block;
           color: #6c6c6c;
           font-family: "Akrobat-SemiBold";
-          font-size: 18px;
+          font-size: 16px;
           font-weight: 400;
           text-decoration: none; }
           .header.header_page .wrapper .nav .nav__panel .panel__tab .tab__link.current {
-            color: #ff0032;
-            border-bottom: 2px #ff0032 solid;
-            padding-bottom: 11px; }
+            color: #ff0032; }
       .header.header_page .wrapper .nav .nav__touch img {
         width: 31px;
         height: 11px; }
@@ -162,6 +169,7 @@ html, body {
       width: 100%;
       position: absolute; }
     .header.header_page .page__label .label__wrapper {
+      position: relative;
       z-index: 10; }
       .header.header_page .page__label .label__wrapper .info__block {
         width: 50%; }
@@ -200,6 +208,16 @@ html, body {
         font-weight: 400;
         line-height: 47px;
         padding-left: 5px; }
+      .header.header_page .page__label .label__wrapper .decors__left {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 30px;
+        display: flex;
+        flex-direction: column; }
+    .header.header_page .page__label .decors__left img:first-child {
+      height: 65px;
+      width: 65px; }
 
 .screen__portfolio {
   min-height: calc(100vh - 100px);
@@ -222,8 +240,7 @@ html, body {
       font-family: "Akrobat-SemiBold";
       font-size: 20px;
       font-weight: 400;
-      line-height: 40px;
-      margin-top: 40px; }
+      line-height: 40px; }
     .screen__portfolio .choose__block .block__left .portfolio__list {
       height: 100%;
       overflow: hidden; }
@@ -254,7 +271,7 @@ html, body {
             visibility: visible; }
         .screen__portfolio .choose__block .block__left .portfolio__list .list__item span {
           font-family: "Akrobat-SemiBold";
-          font-size: 55px;
+          font-size: 32px;
           font-weight: 400;
           letter-spacing: 1px;
           z-index: 20;
@@ -470,9 +487,11 @@ html, body {
       color: #363636;
       text-align: center;
       font-family: "Akrobat-SemiBold";
-      font-size: 98px;
+      font-size: 70px;
       font-weight: 400;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      margin-top: auto;
+      margin-bottom: auto; }
     .footer .wrapper .footer__row {
       display: flex;
       justify-content: space-between;
@@ -500,9 +519,8 @@ html, body {
           text-decoration: none; }
           .footer .wrapper .footer__row .row__socials .contacts__links .link__item:not(:first-child) {
             margin-left: 56px; }
-          .footer .wrapper .footer__row .row__socials .contacts__links .link__item.active {
-            color: #ff0032;
-            border-bottom: 3px #ff0032 solid; }
+          .footer .wrapper .footer__row .row__socials .contacts__links .link__item:hover {
+            color: #ff0032; }
 
 @media (max-width: 1599px) {
   .wrapper {
@@ -551,6 +569,10 @@ html, body {
     display: none; }
   .header.header_page .page__label .label__wrapper .info__block .block__title {
     font-size: 130px; } }
+
+@media (max-width: 1200px) {
+  .decors__left.desktop .left__img {
+    display: none; } }
 
 @media (max-width: 777px) {
   .header.header_page .page__label .decor__circle {

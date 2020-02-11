@@ -13,9 +13,11 @@
       color: #363636;
       text-align: center;
       font-family: "Akrobat-SemiBold";
-      font-size: 98px;
+      font-size: 70px;
       font-weight: 400;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      margin-top: auto;
+      margin-bottom: auto; }
     .footer .wrapper .footer__row {
       display: flex;
       justify-content: space-between;
@@ -43,6 +45,5 @@
           text-decoration: none; }
           .footer .wrapper .footer__row .row__socials .contacts__links .link__item:not(:first-child) {
             margin-left: 56px; }
-          .footer .wrapper .footer__row .row__socials .contacts__links .link__item.active {
-            color: #ff0032;
-            border-bottom: 3px #ff0032 solid; }
+          .footer .wrapper .footer__row .row__socials .contacts__links .link__item:hover {
+            color: #ff0032; }
